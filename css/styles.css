@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C5D7D9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1200px; /* Defina um valor que se adapte ao layout desejado */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Espalha os elementos dentro do header */
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #515050;
+}
+
+header img {
+    margin-left: 25px;
+    width: 35px;
+}
+
+nav ul {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #013440;
+    text-decoration: none;
+}
+
+.usuario {
+    text-align: center;
+    align-items: center;
+}
+
+.landing-freelancer{
+    padding-bottom: 25px;
+    border-bottom: 4px solid #F28241;
+}
+
+.cadastro{
+    background-color: #F28241;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    transition: transform all .5s ease;
+}
+
+/* FIM header */
+
+
+/* Início section oportunidades */
+
+.oportunidades{
+    justify-content: space-around;
+}
+
+.vantagens{
+    margin-top: 155px;
+    margin-left: 30px;
+}
+
+.vantagens ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.vantagens h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.vantagens span{
+    color: #F28241;
+}
+
+.oportunidades{
+    display: flex;
+}
+
+.oportunidades img{
+    margin-top: 75px;
+    width: 600px;
+    border-radius: 50px;
+}
+
+.vantagens p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-work{
+    text-decoration: none;
+    color: white;
+    background-color: #013440;
+    padding: 15px;
+    border-radius: 20px;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.btn-work:hover{
+    background-color: #F28241;
+}
+
+.btn-contract{
+    color: #013440;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.btn-contract:hover{
+    color: #F28241;
+}
+
+/* FIM section oportunidades*/
+
+/* Início cards Desenvolvedor e Freelancer */
+
+.container-cards {
+    display: flex; /* Define o contêiner como flex */
+    justify-content: center; /* Centraliza o card horizontalmente */
+    align-items: center; /* Centraliza o card verticalmente */
+    margin-top: 20px;
+    /* height: 100vh; Altura total da tela */
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    justify-content: center;
+    width: 550px;
+    padding: 20px; /* Espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: transform 0.3s ease; /* Animação de hover */
+    /* margin: auto; Centraliza o card no contêiner */
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho no hover */
+}
+
+.card-img {
+    overflow: hidden;
+    width: 150px; /* Tamanho da imagem */
+    height: 150px; /* Tamanho da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+.card-img img {
+    width: 100%; /* A imagem ocupa todo o espaço */
+    height: 100%;
+    object-fit: cover; /* Corta a imagem para caber no espaço */
+}
+
+.card-title {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.card-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.card-title h1 {
+    font-size: 28px;
+    color: #013440;
+}
+
+.card-description {
+    margin-top: 10px; /* Espaçamento superior na descrição */
+}
+
+.card-description p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+
+
+/* FIM cards Desenvolvedor e Freelancer */
