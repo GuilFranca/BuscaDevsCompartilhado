@@ -253,6 +253,15 @@ nav ul li a {
 
 .card-description-desenvolvedor-cliente ul{
     list-style: none;
+    padding: 15px 0 20px 0;
+}
+
+.card-description-desenvolvedor-cliente ul li{
+    padding-top: 5px;
+}
+
+.card-description-desenvolvedor-cliente ul li i{
+    color: #F28241;
 }
 
 /* FIM card conectamos você aos clientes */
