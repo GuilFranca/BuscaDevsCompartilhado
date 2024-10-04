@@ -245,24 +245,78 @@ nav ul li a {
 .card-description-desenvolvedor-cliente{
     display: flex;
     gap: 20px;
-    border: 1px solid red;
     margin: 0 auto;
     width: 550px;
     justify-content: space-around;
 }
 
-.card-description-desenvolvedor-cliente ul{
-    list-style: none;
-    padding: 15px 0 20px 0;
+/* Lista de descriçõ de desenvolvedor */
+
+.lista-1{
+    margin: 15px 0 20px 0;
+    display: flex;
 }
 
-.card-description-desenvolvedor-cliente ul li{
+.lista-1 ul li{
     padding-top: 5px;
 }
 
-.card-description-desenvolvedor-cliente ul li i{
+.lista-1 .icon-lista{
+    list-style: none;
     color: #F28241;
+    text-align: center;
 }
+
+.lista-1 .descripton-lista{
+    list-style: none;
+    padding-left: 5px;
+}
+
+.lista-2 ul li{
+    padding-top: 5px;
+}
+
+.lista-2{
+    margin: 15px 0 20px 0;
+    display: flex;
+}
+
+.lista-2 .icon-lista{
+    list-style: none;
+    color: #F28241;
+    text-align: center;
+}
+
+.lista-2 .descripton-lista{
+    list-style: none;
+    padding-left: 5px;
+}
+
+/* Início Botões do card */
+
+.btn-description-desenvolvedor-cliente{
+    margin: 0 auto;
+    width: 550px;
+    padding-top: 20px;
+}
+
+.btn-description-desenvolvedor-cliente ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.btn-description-desenvolvedor-cliente ul li a{
+    text-decoration: none;
+}
+
+.btn-description-desenvolvedor-cliente ul li{
+    color: #013440;
+}
+
+
+/* FIM Botões do card */
 
 /* FIM card conectamos você aos clientes */
 
