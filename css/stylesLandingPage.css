@@ -51,7 +51,7 @@ nav ul li a {
 
 .landing-freelancer{
     padding-bottom: 25px;
-    border-bottom: 4px solid #F28241;
+    /* border-bottom: 4px solid #F28241; */
 }
 
 .cadastro{
@@ -224,7 +224,13 @@ nav ul li a {
     display: flex; /* Define o contêiner como flex */
     justify-content: center; /* Centraliza o card horizontalmente */
     margin-top: 20px;
-    gap: 20px;
+    /* gap: 20px; */
+}
+
+.card-desenvolvedor-cliente{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .card-desenvolvedor-cliente-img img{
@@ -318,8 +324,37 @@ nav ul li a {
 
 /* FIM Botões do card */
 
-/* FIM card conectamos você aos clientes */
+/* Início do footer */
 
+footer{
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
 
+footer img{
+    width: 100px;
+    height: auto;
+}
 
-/* FIM cards Desenvolvedor*/
+.navegação__lista{
+    list-style: none;
+}
+
+.navegação__lista li a{
+    color: #013440;
+    text-decoration: none;
+}
+
+.navegação__lista li a:hover{
+    text-decoration: underline;
+}
+
+.lista__nav-titulo{
+    color: #013440;
+    border-bottom: 2px solid #013440;
+}
+
+/* FIM do footer */
