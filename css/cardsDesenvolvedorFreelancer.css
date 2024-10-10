@@ -69,3 +69,19 @@
     color: #333;
     line-height: 1.5; /* Espaçamento entre as linhas */
 }
+
+@media screen and (max-width: 750px) {
+    .card-img{
+        display: none;
+    }
+
+    .container-desenvolvedor{
+        margin: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card{
+        width: 90%;
+    }
+}
