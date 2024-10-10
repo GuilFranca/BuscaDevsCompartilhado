@@ -6,7 +6,7 @@
 }
 
 .card-desenvolvedor-cliente{
-    background-color: rgba(255, 255, 255, 0.296);
+    /* background-color: rgba(255, 255, 255, 0.296); */
     padding: 10px;
     border-radius: 15px;
 }
@@ -97,4 +97,24 @@
 
 .btn-description-desenvolvedor-cliente ul li{
     color: #013440;
+}
+
+@media screen and (max-width: 750px) {
+    .card-desenvolvedor-cliente-img{
+        display: none;
+    }
+
+    .container-desenvolvedor-cliente{
+        width: 95%;
+        margin: auto;
+    }
+
+    .card-title-desenvolvedor-cliente{
+        font-size: 12px;
+    }
+
+    .card-description-desenvolvedor-cliente{
+        justify-content: center;
+        font-size: 12px;
+    }
 }

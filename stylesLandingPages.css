@@ -3,6 +3,11 @@
 @import url(./css/cardsDesenvolvedorFreelancer.css);
 @import url(./css/footer.css);
 
+@import url(./css/login.css);
+@import url(./css/cadastro.css);
+
+@import url(./css/cardConectamosClientes.css);
+
 * {
     margin: 0;
     padding: 0;
