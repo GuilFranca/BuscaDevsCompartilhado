@@ -98,8 +98,12 @@
         margin-top: 20px;
     }
 
-    .vantagens ul li{
+    /* .vantagens ul li{
         font-size: 7px;
+    } */
+
+    .li1{
+        font-size: 10px;
     }
 
     .vantagens h1{
