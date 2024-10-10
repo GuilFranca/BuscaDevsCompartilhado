@@ -1,0 +1,30 @@
+footer{
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer img{
+    width: 100px;
+    height: auto;
+}
+
+.navegação__lista{
+    list-style: none;
+}
+
+.navegação__lista li a{
+    color: #013440;
+    text-decoration: none;
+}
+
+.navegação__lista li a:hover{
+    text-decoration: underline;
+}
+
+.lista__nav-titulo{
+    color: #013440;
+    border-bottom: 2px solid #013440;
+}
