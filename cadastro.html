@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="./cadastro.css">
+    <script src="https://kit.fontawesome.com/c9957cc5bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/imagens/BDlogo.png">
+</head>
+<body>
+
+    <header>
+        <a href="./index.html"><img  src="./img/BDlogo.png" alt="Logo"></a>
+            
+        <nav class="usuario">
+            <ul>
+                <li><a href="LandingPage.html" class="landing-contratante">Eu quero contratar</a></li>
+                <li><a href="trabalhar.html" class="landing-freelancer">Eu quero trabalhar</a></li>
+                <li><a href="login.html">Faça login</a></li>
+                <li><a href="#" class="cadastro">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cadastro-section">
+        <div class="cadastro-container">
+            <h1>Cadastro</h1>
+            <form action="dashboard.html" method="POST">
+                <label for="name">Nome:</label>
+                <input type="name" id="name" name="nome"minlength="0" maxlength="30"size="8" placeholder="Digite seu Nome">
+                <label for="name">Sobrenome:</label>
+                <input type="name" id="name" name="nome" minlength="2"maxlength="50"size="8" placeholder="Digite seu Sobrenome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password"minlength="4"maxlength="50"size="8" placeholder="Digite sua senha" required>
+                
+                <button type="submit" class="btn-cadastro">Cadastrar!</button>
+            </form>
+            <p><a href="./login.html">Login</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="navegação__footer">
+            <ul class="navegação__lista">
+                <li class="./lista__nav-titulo">NAVEGAÇÃO</li>
+                <li><a href="LandingPage.html">Home</a></li>
+                <li><a href="#">Contratar</a></li>
+                <li><a href="trabalhar.html">Trabalhar</a></li>
+            </ul>
+        </div>
+        <img src="./img/imagens/BDlogo.png" alt="Logo buscadev's">
+    </footer>
+</body>
+</html>
