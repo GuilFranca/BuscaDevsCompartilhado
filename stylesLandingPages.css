@@ -1,9 +1,7 @@
 @import url(./css/header.css);
 @import url(./css/sectionsOportunidade.css);
 @import url(./css/cardsDesenvolvedorFreelancer.css);
-@import url(./css/footer.css); {
-    
-}
+@import url(./css/footer.css);
 
 * {
     margin: 0;
