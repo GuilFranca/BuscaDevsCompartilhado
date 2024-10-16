@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .container-desenvolvedor-cliente{
     display: flex; /* Define o contêiner como flex */
     justify-content: center; /* Centraliza o card horizontalmente */
@@ -101,8 +107,15 @@
 
 @media screen and (max-width: 750px) {
     .card-desenvolvedor-cliente-img{
-        display: none;
+        text-align: center;
+        width: 100%;
     }
+
+    .card-desenvolvedor-cliente-img img{
+        width: 50%;
+        margin: 1rem;
+    }
+
 
     .container-desenvolvedor-cliente{
         width: 95%;
