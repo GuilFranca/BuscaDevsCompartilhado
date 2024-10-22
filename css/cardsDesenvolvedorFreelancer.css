@@ -1,0 +1,88 @@
+.container-desenvolvedor {
+    display: flex; /* Define o contêiner como flex */
+    justify-content: center; /* Centraliza o card horizontalmente */
+    align-items: center; /* Centraliza o card verticalmente */
+    margin-top: 20px;
+    gap: 20px;
+    /* height: 100vh; Altura total da tela */
+}
+
+.container-desenvolvedor a{
+    text-decoration: none;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    justify-content: center;
+    width: 550px;
+    padding: 20px; /* Espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: transform 0.3s ease; /* Animação de hover */
+    /* margin: auto; Centraliza o card no contêiner */
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho no hover */
+}
+
+.card-img {
+    overflow: hidden;
+    width: 150px; /* Tamanho da imagem */
+    height: 150px; /* Tamanho da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+.card-img img {
+    width: 100%; /* A imagem ocupa todo o espaço */
+    height: 100%;
+    object-fit: cover; /* Corta a imagem para caber no espaço */
+}
+
+.card-title {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.card-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.card-title h1 {
+    font-size: 28px;
+    color: #013440;
+}
+
+.card-description {
+    margin-top: 10px; /* Espaçamento superior na descrição */
+}
+
+.card-description p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+@media screen and (max-width: 750px) {
+    .card-img{
+        display: none;
+    }
+
+    .container-desenvolvedor{
+        margin: auto;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .card{
+        width: 90%;
+    }
+}

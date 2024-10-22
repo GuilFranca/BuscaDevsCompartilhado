@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/LogIn Form</title>
+    <link rel="stylesheet" href="./css/geral.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  </head>
+  <body>
+  <!-- Chama as particulas -->
+  <div id="particles-js"></div>
+    
+    <!-- Início Header -->
+
+    <header>
+
+        <a href="index.html"><img src="./img/imagens/BDlogo.png" alt="Logo"></a>
+
+        <nav class="usuario">
+            <ul>
+                <li><a href="index.html" class="underline-animation">Eu quero contratar</a></li>
+                <li><a href="trabalhar.html" class="underline-animation">Eu quero trabalhar</a></li>
+            </ul>
+        </nav>
+
+        <ul class="login">
+            <li><a href="login.html" class="facaLogin">Faça login</a></li>
+            <li><a href="cadastro.html" class="cadastro">Cadastre-se</a></li>
+        </ul>
+
+    </header>
+<div class="central-container">
+  <div class="geral">
+      <div class="button-box">
+        <div class="btn-active-back"></div>
+        <button class="toggle-btn login-btn">&nbsp;&nbsp;Login</button>
+        <button class="toggle-btn register-btn">&nbsp;&nbsp;Cadastre-se</button>
+      </div>
+      <div class="form-box">
+        <form class="login-form">
+          <div class="input-box">
+            <input type="email" id="username" required />
+            <label for="username">Email</label>
+          </div>
+          <div class="input-box">
+            <input type="password" id="password" required />
+            <label for="password">Senha</label>
+          </div>
+          <div class="check-box">
+            <input type="checkbox" id="login-checkbox" />
+            <label for="login-checkbox">Lembre-me</label>
+          </div>
+          <button class="submit-button" onclick="userLogin()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="./logado/logado.html">
+              Login
+            </a>
+        </button>
+        </form>
+        <form class="register-form">
+          <div class="input-box">
+            <input type="text" id="username2" required />
+            <label for="username2">Nome</label>
+          </div>
+          <div class="input-box">
+            <input type="email" id="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-box">
+            <input type="password" id="password2" required />
+            <label for="password2">Senha</label>
+          </div>
+          <div class="check-box">
+            <input type="checkbox" id="register-checkbox" />
+            <label for="register-checkbox">Concordo com os termos e condições</label>
+          </div>
+          <button class="submit-button" onclick="userRegister()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Cadastre-se
+        </button>
+        
+        </form>
+      </div>
+  </div>
+</div>    
+<script>
+  const login = document.querySelector(".login-btn");
+  const register = document.querySelector(".register-btn");
+  const loginForm = document.querySelector(".login-form");
+  const registerForm = document.querySelector(".register-form");
+  const btnActiveBack = document.querySelector(".btn-active-back");
+  
+  login.addEventListener("click", () => {
+    btnActiveBack.style.left = "0px";
+    registerForm.style.left = "115%";
+    loginForm.style.left = "0px";
+  });
+  
+  register.addEventListener("click", () => {
+    btnActiveBack.style.left = "50%";
+    registerForm.style.left = "0px";
+    loginForm.style.left = "-115%";
+  });
+  
+  // var rellax = new Rellax('.rellax');
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="./Js/app.js"></script>
+<script type="text/javascript" src="./Js/index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyC0Yt3UPn6M0MtRXkrrrdNrql8GK-1EchM",
+  authDomain: "busca-devs.firebaseapp.com",
+  projectId: "busca-devs",
+  storageBucket: "busca-devs.appspot.com",
+  messagingSenderId: "778418785989",
+  appId: "1:778418785989:web:54bbf45161b5044d336aac"
+};
+
+firebase.initializeApp(firebaseConfig);
+</script>
+
+</script>
+</body>
+</html>

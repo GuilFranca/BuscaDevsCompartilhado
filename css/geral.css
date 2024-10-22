@@ -1,0 +1,859 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C5D7D9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Espalha os elementos dentro do header */
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #515050;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+header img {
+    margin-left: 25px;
+    width: 35px;
+}
+
+nav ul {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #013440;
+    text-decoration: none;
+}
+
+.usuario a.underline-animation {
+    position: relative;
+    display: inline-block;
+    color: #013440; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+.usuario a.underline-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajuste a posição vertical conforme necessário */
+    width: 100%;
+    height: 2px; /* Espessura do sublinhado */
+    background: #F28241; /* Cor do sublinhado */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.usuario a.underline-animation:hover::after {
+    transform: scaleX(1);
+}
+
+.landing-freelancer{
+    padding-bottom: 25px;
+    /* border-bottom: 4px solid #F28241; */
+}
+
+/* login e cadastro */
+
+.login {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+.login .facaLogin {
+    text-decoration: none;
+    color: #013440;
+    transition: transform 0.3s ease, color 0.3s ease; /* Adicionando transição */
+}
+
+.login .facaLogin:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+    color: #F28241; /* Mudança de cor ao passar o mouse */
+}
+
+.cadastro {
+    text-decoration: none;
+    background-color: #F28241;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    transition: transform 0.5s ease;
+}
+
+.cadastro:hover {
+    background-color: #b16133;
+}
+/* Fundo animado com gradiente */
+#particles-js {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, #000428, #026783,#004e92);
+    background-size: 300% 300%; /* Expande o gradiente para criar movimento */
+    animation: moveGradient 15s ease infinite; /* Animação suave e infinita */
+  }
+
+/* Seção de Login e cadastro */
+.central-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz o contêiner ocupar toda a altura da viewport */
+}
+
+.geral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    font-size: 1rem;
+    margin-block: 1rem;
+    height: 28rem;
+    width: 30rem;
+    overflow: hidden;
+    text-align: center;
+  } 
+
+  .button-box {
+    position: relative;
+    background-color: #013440;
+    width: auto;
+    border-radius: 2.5rem;
+    margin-block: 0.5rem 3.5rem;
+    z-index: 0;
+    transition: .3s;
+  }
+  
+  .toggle-btn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    z-index: 1;
+  }
+  
+  .btn-active-back {
+    background: linear-gradient(to right, #2AB0BF, #026873);
+    width: 50%;
+    border-radius: 2.5rem;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    transition: 0.5s left linear;
+  }
+  
+  .form-box {
+    width: 100%;
+    position: relative;
+  }
+  
+  form {
+    width: 100%;
+    position: absolute;
+    transition: left 0.5s linear;
+  }
+  
+  .login-form {
+    left: 0px;
+  }
+  
+  .register-form {
+    left: 115%;
+  }
+  
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 0.4rem 0.2rem;
+    font-size: inherit;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    font-family: inherit;
+  }
+  
+  .input-box label {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:valid + label {
+    top: -20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #02687300;
+    padding: 2px 5px;
+  }
+  
+  .check-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: rgb(184, 184, 184);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]::after {
+    content: "";
+    transform: scale(0);
+    transition: 0.2s transform ease-in-out;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: "";
+    background-color: #03e9f4;
+    width: 0.7rem;
+    height: 0.7rem;
+    transform: scale(1);
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: rgba(106, 106, 106, 0.5);
+    box-shadow: 0 0 10px #1b1b1b;
+  }
+  
+  input[type="checkbox"] + label {
+    color: rgb(193, 193, 193);
+    font-size: 0.9rem;
+    padding-left: 0.6rem;
+    cursor: pointer;
+  }
+  
+  .check-box span {
+    color: rgb(193, 193, 193);
+    font-size: 0.9rem;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0.6rem 1.2rem;
+    color: #03e9f4;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: none;
+    transition: 0.5s;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    background-color: rgb(45, 45, 45);
+  }
+
+  .submit-button a{
+    text-decoration: none;
+  }
+  
+  .submit-button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #03e9f4;
+  }
+  
+  .submit-button span {
+    position: absolute;
+    display: block;
+  }
+  
+  .submit-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .submit-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite 0.25s;
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  .submit-button span:nth-child(3) {
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    right: -100%;
+    background: linear-gradient(to left, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite 0.5s;
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  .submit-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite 0.75s;
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+  
+  .other-options {
+    position: absolute;
+    bottom: 1rem;
+  }
+  
+  .another-option {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    background-color: #243b55;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    margin-inline: auto;
+    margin-bottom: -1rem;
+  }
+
+  /* fim seção login e cadastro */
+
+/* Seção Oportunidades */
+.oportunidades{
+    width: 1250px;
+    /* margin-top: 20px; */
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 3 colunas de tamanho igual */
+    grid-gap: 20px; /* Espaçamento entre os itens */
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 5;
+    color: #fff
+}
+
+.vantagens{
+    margin-top: 100px;
+    align-items: center;
+}
+
+.vantagens ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.vantagens h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.vantagens span{
+    color: #F28241;
+}
+
+.oportunidades{
+    display: flex;
+}
+
+.img-vantagens-1{
+    display: none;
+}
+
+.oportunidades .img-vantagens img{
+    margin-top: 40px;
+    width: 600px;
+    border-radius: 50px;
+}
+
+.vantagens p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-work{
+    text-decoration: none;
+    color: white;
+    background-color: #013440;
+    padding: 15px;
+    border-radius: 20px;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.btn-work:hover{
+    background-color: #F28241;
+}
+
+.btn-contract{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.btn-contract:hover{
+    color: #F28241;
+}
+
+/* Cards de Desenvolvedor e Freelancer */
+.container-desenvolvedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    gap: 300px;
+}
+
+.container-desenvolvedor a {
+    text-decoration: none;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 550px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    margin-top: 0px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+.card-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.card-title h1 {
+    font-size: 28px;
+    color: #013440;
+}
+
+.card-description {
+    margin-top: 10px;
+}
+
+.card-description p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Card de Conexão com Clientes */
+.container-desenvolvedor-cliente {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-desenvolvedor-cliente {
+    background-color: rgba(255, 255, 255, 0.296);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.card-desenvolvedor-cliente-img img {
+    width: 550px;
+    border-radius: 15px;
+}
+
+.card-title-desenvolvedor-cliente h1,
+.card-title-desenvolvedor-cliente p {
+    text-align: center;
+    width: 550px;
+}
+
+.card-description-desenvolvedor-cliente {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    width: 550px;
+    justify-content: space-around;
+}
+
+/* Listas de Descrição */
+.lista-1, .lista-2 {
+    margin: 15px 0 20px 0;
+    display: flex;
+}
+
+.lista-1 ul li, .lista-2 ul li {
+    padding-top: 5px;
+}
+
+.lista-1 .icon-lista, .lista-2 .icon-lista {
+    list-style: none;
+    color: #F28241;
+    text-align: center;
+}
+
+.lista-1 .descripton-lista, .lista-2 .descripton-lista {
+    list-style: none;
+    padding-left: 5px;
+}
+
+
+/* Seção Depoimentos */
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Alinha os depoimentos em linhas */
+  padding: 20px; /* Espaçamento geral */
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo com leve transparência */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px; /* Espaçamento entre os depoimentos */
+  padding: 30px; /* Espaçamento interno */
+  width: 250px; /* Largura fixa para os depoimentos */
+  text-align: center; /* Centraliza o texto */
+}
+
+.testimonial-image {
+  width: 80px; /* Ajuste o tamanho da imagem */
+  height: 80px; /* Manter proporção */
+  border-radius: 50%; /* Imagem circular */
+  margin-bottom: 10px; /* Espaçamento entre imagem e texto */
+}
+
+.testimonial-text {
+  font-size: 1em; /* Tamanho da fonte do depoimento */
+  margin: 10px 0; /* Espaçamento entre texto e nome */
+}
+
+.testimonial-name {
+  font-weight: bold; /* Nome em negrito */
+  color: #555; /* Cor do nome */
+}
+
+/* Botões do Card */
+.btn-description-desenvolvedor-cliente {
+    margin: 0 auto;
+    width: 550px;
+    padding-top: 20px;
+}
+
+.btn-description-desenvolvedor-cliente ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.btn-description-desenvolvedor-cliente ul li a {
+    text-decoration: none;
+}
+
+.btn-description-desenvolvedor-cliente ul li {
+    color: #013440;
+}
+
+/* Section Funcionanilades */
+.explore-section {
+    background-color: #00000029;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
+    gap: 200px;
+    margin: 350px;
+    border-radius: 150px;
+    border: solid #F28241 3px ;
+}
+
+.explore-content {
+    max-width: 600px;
+}
+
+.explore-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.explore-content span {
+    color: #F28241;
+}
+
+.explore-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.explore-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.explore-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.explore-freelancers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer img{
+    width: 100px;
+    height: auto;
+}
+
+.navegação__lista{
+    list-style: none;
+}
+
+.navegação__lista li a{
+    color: #013440;
+    text-decoration: none;
+}
+
+.navegação__lista li a:hover{
+    text-decoration: underline;
+}
+
+.lista__nav-titulo{
+    color: #013440;
+    border-bottom: 2px solid #013440;
+}
+/* Estilos para o feedback visual */
+#feedback-success, #feedback-error {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 1000;
+  }
+  
+  #feedback-success {
+    background-color: rgba(0, 128, 0, 0.9); /* Verde transparente */
+    color: white;
+  }
+  
+  #feedback-error {
+    background-color: rgba(255, 0, 0, 0.9); /* Vermelho transparente */
+    color: white;
+  }
+  
+  .show {
+    display: block;
+    animation: fadeInOut 3s forwards;
+  }
+
+/* Responsividade */
+@media screen and (max-width: 750px) {
+    .card-img, .card-desenvolvedor-cliente-img {
+        display: none;
+    }
+
+    .container-desenvolvedor, .container-desenvolvedor-cliente {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .card, .card-desenvolvedor-cliente {
+        width: 90%;
+    }
+
+    .card-title, .card-description {
+        font-size: 12px;
+    }
+}
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes moveGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Media Query para tablets (até 768px) */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  .header {
+      padding: 15px;
+  }
+}
+
+/* Media Query para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+
+  .header {
+      background-color: #444;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .nav {
+      display: block; /* Exibe a navegação em bloco */
+  }
+}

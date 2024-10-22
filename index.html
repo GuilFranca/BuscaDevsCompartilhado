@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer landing page</title>
+    <script src="https://kit.fontawesome.com/c9957cc5bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/png" href="./img/imagens/BDlogo.png">
+    <script src="https://kit.fontawesome.com/c9957cc5bb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/geral.css">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script>
+        // Sua configuração do Firebase
+        const firebaseConfig = {
+            apiKey: "SUA_API_KEY",
+            authDomain: "SEU_AUTH_DOMAIN",
+            projectId: "SEU_PROJECT_ID",
+            storageBucket: "SEU_STORAGE_BUCKET",
+            messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+            appId: "SEU_APP_ID"
+        };
+
+        // Inicializando o Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+
+</head>
+<body>
+  <!-- Chama as particulas -->
+  <div id="particles-js"></div>
+    
+    <!-- Início Header -->
+
+    <header>
+        <a href="index.html"><img src="./img/imagens/BDlogo.png" alt="Logo"></a>
+
+        <nav class="usuario">
+            <ul>
+                <li><a href="index.html" class="underline-animation">Eu quero contratar</a></li>
+                <li><a href="trabalhar.html" class="underline-animation">Eu quero trabalhar</a></li>
+            </ul>
+        </nav>
+
+        <ul class="login">
+            <li><a href="./login.html" class="facaLogin">Faça login</a></li>
+            <li><a href="./login.html" class="cadastro">Cadastre-se</a></li>
+        </ul>
+    </header>
+
+    <!-- FIM Header -->
+
+    <section class="oportunidades">
+        <div class="vantagens">
+            <ul class="list-vantagens">
+                <li class="li1"><i class="fa-regular fa-circle-check"></i> Cadastro gratuito</li>
+                <li class="li1"><i class="fa-solid fa-shield-halved"></i> Pagamentos Protegidos</li>
+                <li class="li1"><i class="fa-solid fa-dollar-sign"></i> Várias opções de saque</li>
+            </ul>
+
+            <div class="img-vantagens-1">
+                <img src="./img/imagens/japa 1024 x 1024.jpeg" alt="" class="img-vantagens-1-1">
+            </div>
+
+            <h1>Faça seu negócio crescer<br> <span>com os melhores</span> <br> da América Latina</h1>
+
+            <p>Tenha acesso a oportunidade de gerar uma renda segura e sustentável, <br>trabalhando sem sair de casa.</p>
+
+            <ul class="container-btn">
+                <li class="li1"><a href="login.html" class="btn-work">Eu quero contratar</a></li>
+                <li class="li1"><a href="trabalhar.html" class="btn-contract">Você quer trabalhar? <i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="img-vantagens">
+            <img src="./img/imagens/japa 1024 x 1024.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="container-desenvolvedor">
+        <a href="./trabalhar.html">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./img/imagens/mulher blusa branca.jpeg" alt="">
+                </div>
+                <div class="card-title">
+                    <p>Eu quero trabalhar como desenvolvedor</p>
+                    <h1>Desenvolvedor</h1>
+                </div>
+                <div class="card-description">
+                    <p>Encontre o trabalho ideal para você no conforto de sua casa, com a ajuda e certificado de qualidade que só a BuscaDev's oferece.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="./index.html">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./img/imagens/um empresário mais velho.png" alt="">
+                </div>
+                <div class="card-title">
+                    <p>Eu quero contratar um desenvolvedor</p>
+                    <h1>Contratante</h1>
+                </div>
+                <div class="card-description">
+                    <p>Encontre o profissional ideal para o seu serviço em qualquer lugar do Brasil.</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
+<!-- Seção de Depoimentos -->
+<div class="testimonial-container">
+    <div class="testimonial">
+        <img src="data:image/jpeg;base64,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" alt="Depoente 1" class="testimonial-image">
+        <p class="testimonial-text">"Ao usar o Busca Devs, encontramos profissionais altamente qualificados em tempo recorde. Nossa equipe estava precisando de um desenvolvedor frontend para um projeto importante, e a plataforma nos conectou com candidatos excepcionais. O processo foi simples e eficiente, e a comunicação foi fluida. Com certeza, recomendaremos o Busca Devs a outras empresas em busca de talentos."</p>
+        <p class="testimonial-name">-Lucas Oliveira</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReSQloxfu_U5OAZ0ez_rqpvfD6IAFtBqoiwQ&s " alt="Depoente 2" class="testimonial-image">
+        <p class="testimonial-text">"Desde que começamos a usar o Busca Devs, nossa busca por desenvolvedores tem sido muito mais eficaz. A variedade de perfis e habilidades disponíveis nos permitiu encontrar exatamente o que precisávamos para expandir nossa equipe. Além disso, a interface do site é muito intuitiva, facilitando a navegação e a seleção dos candidatos. Estamos extremamente satisfeitos com os resultados."</p>
+        <p class="testimonial-name">- Ana Costa</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsHYVUyUpNlRMfE9YbmMzQM6pmDVNS9iZgzA&s" alt="Depoente 3" class="testimonial-image">
+        <p class="testimonial-text">"Como uma startup em crescimento, precisávamos de uma plataforma confiável para recrutar desenvolvedores talentosos. O Busca Devs superou nossas expectativas. Encontramos profissionais que não apenas possuem as habilidades técnicas necessárias, mas que também se encaixam na cultura da nossa empresa. O suporte ao cliente foi excepcional, tornando nossa experiência ainda melhor. Definitivamente, faremos uso contínuo dessa ferramenta."</p>
+        <p class="testimonial-name">- Mariana Lima</p>
+    </div>
+    <div class="testimonial">
+        <img src=" data:image/jpeg;base64,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" alt="Depoente 4" class="testimonial-image">
+        <p class="testimonial-text">"A utilização do Busca Devs transformou nossa maneira de recrutar. Antes, gastávamos muito tempo filtrando currículos, mas agora conseguimos visualizar perfis completos de desenvolvedores em minutos. A qualidade dos candidatos que recebemos foi impressionante. Além disso, a equipe de suporte sempre esteve pronta para nos ajudar com qualquer dúvida. Recomendo o Busca Devs para empresas que buscam eficiência e qualidade no recrutamento."</p>
+        <p class="testimonial-name">- Rafael Santos</p>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="navegação__footer">
+            <ul class="navegação__lista">
+                <li class="lista__nav-titulo">NAVEGAÇÃO</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Contratar</a></li>
+                <li><a href="trabalhar.html">Trabalhar</a></li>
+            </ul>
+        </div>
+        <img src="./img/imagens/BDlogo.png" alt="Logo buscadev's">
+    </footer>
+  
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./Js/app.js"></script>
+    <script type="text/javascript" src="./Js/script.js"></script>
+</body>
+</html>
